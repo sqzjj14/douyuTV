@@ -6,8 +6,8 @@
 //  Copyright © 2017年 吴凡. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseCollectViewController.h"
 
-@interface FunnyViewController : UIViewController
+@interface FunnyViewController : BaseCollectViewController
 
 @end

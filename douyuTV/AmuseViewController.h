@@ -6,8 +6,8 @@
 //  Copyright © 2017年 吴凡. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseCollectViewController.h"
 
-@interface AmuseViewController : UIViewController
+@interface AmuseViewController : BaseCollectViewController
 
 @end
