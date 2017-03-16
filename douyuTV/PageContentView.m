@@ -11,7 +11,7 @@
 
 @implementation PageContentView
 
-- (instancetype)initWithFrame:(CGRect)frame childVCs:(NSMutableArray*)childVcs perentViewController:(UIViewController*)perentViewController
+- (instancetype)initWithFrame:(CGRect)frame childVCs:(NSMutableArray*)childVcs perentViewController:(UIViewController*)perentViewController scrollView:(UIScrollView *)scrollview
 {
     if (self != [super initWithFrame:frame]) {
         return nil;
@@ -19,6 +19,7 @@
     self.frame = frame;
     _childVCs = childVcs;
     _perentVC = perentViewController;
+    _scrollView = scrollview;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc]init];
     layout.itemSize = self.bounds.size;
@@ -65,6 +66,53 @@
     return cell;
 }
 
-#pragma mark - ScrollDelegate
+#pragma mark - Scroll
+-(void)scrollViewWillBeginDragging:(UIScrollView *)scrollView
+{
+    _startOffsetX = scrollView.contentOffset.x;
+}
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    _sourceIndex = 0;
+    _targetIndex = 0;
+    _progress = 0;
+    CGFloat currentOffsetX = scrollView.contentOffset.x; //scrollview即collectview
+    NSLog(@"%f _startOffsetX=%f",currentOffsetX,_startOffsetX)
+    ;
+    CGFloat scrollViewW = scrollView.bounds.size.width;
+    
+    if (currentOffsetX > _startOffsetX) {
+        _progress = currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW);
+        _sourceIndex = (int)(currentOffsetX / scrollViewW);
+        _targetIndex = _sourceIndex + 1;
+        
+        if (_targetIndex >= _childVCs.count)
+        {
+            _targetIndex = _childVCs.count - 1;
+        }
+        
+        if (currentOffsetX - _startOffsetX == scrollViewW) {
+            _progress = 1;
+            _targetIndex = _sourceIndex;
+        }
+    }
+    else {
+         _progress = 1 - (currentOffsetX / scrollViewW - floor(currentOffsetX / scrollViewW));
+        _targetIndex = (int)(currentOffsetX / scrollViewW);
+        _sourceIndex = _targetIndex + 1;
+        
+        if (_sourceIndex >= _childVCs.count)
+        {
+            _sourceIndex = _childVCs.count - 1;
+        }
+    }
+    
+    NSLog(@"sourceIndex = %ld , targetIndex = %ld",(long)_sourceIndex,(long)_targetIndex);
+    
+    if ([_delegate respondsToSelector:@selector(GetPageContentViewScrollInroWithClass:andSourceIndex:andTargetIndex:andProgress:)]) {
+        [_delegate GetPageContentViewScrollInroWithClass:self andSourceIndex:_sourceIndex andTargetIndex:_targetIndex andProgress:_progress];
+    }
+    
+}
 
 @end

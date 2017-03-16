@@ -20,11 +20,12 @@
 @property (nonatomic,strong)NSMutableArray *childVCs;
 @property (nonatomic,strong)UIViewController *perentVC;
 @property (nonatomic,weak)id<PageContentViewDelegate>delegate;
-@property (nonatomic,assign)NSInteger sourceIndex;
+@property (nonatomic,assign)NSInteger sourceIndex; 
 @property (nonatomic,assign)NSInteger targetIndex;
 @property (nonatomic,assign)CGFloat progress;
 @property (nonatomic,assign)CGFloat startOffsetX;
+@property (nonatomic,strong)UIScrollView *scrollView;
 
 
-- (instancetype)initWithFrame:(CGRect)frame childVCs:(NSMutableArray*)childVcs perentViewController:(UIViewController*)perentViewController;
+- (instancetype)initWithFrame:(CGRect)frame childVCs:(NSMutableArray*)childVcs perentViewController:(UIViewController*)perentViewController scrollView:(UIScrollView*)scrollview;
 @end

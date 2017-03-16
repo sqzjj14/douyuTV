@@ -14,7 +14,7 @@
 #import "PageTitleView.h"
 #import "PageContentView.h"
 
-@interface HomeViewController ()<PageTitleViewDelegate>
+@interface HomeViewController ()<PageTitleViewDelegate,PageContentViewDelegate>
 @property(nonatomic,strong)PageTitleView *pageTitleView;
 @property(nonatomic,strong)PageContentView *pageContentView;
 @end
@@ -40,7 +40,8 @@
     [childVCs addObject:vc3];
     [childVCs addObject:vc4];
     
-    _pageContentView = [[PageContentView alloc]initWithFrame:CGRectMake(0, 64 + 40, kScreenW, kScreenH - 64 -40) childVCs:childVCs perentViewController:self];
+    _pageContentView = [[PageContentView alloc]initWithFrame:CGRectMake(0, 64 + 40, kScreenW, kScreenH - 64 -40) childVCs:childVCs perentViewController:self scrollView:_pageContentView.scrollView];
+    _pageContentView.delegate = self;
     [self.view addSubview:_pageContentView];
 
 }
@@ -87,6 +88,26 @@
 {
     CGPoint offset = CGPointMake((index-100) * _pageContentView.collectionView.bounds.size.width, 0);
     [_pageContentView.collectionView setContentOffset:offset];
+}
+
+- (void)GetPageContentViewScrollInroWithClass:(PageContentView *)pageContentView andSourceIndex:(NSInteger)sourceIndex andTargetIndex:(NSInteger)targetIndex andProgress:(CGFloat)progress
+{
+    NSLog(@"progress = %f",progress);
+    
+    float a[] = {85,85,85};
+    float b[] = {255,128,0};
+    float c[] = {b[0]-a[0],b[1]-a[1],b[2]-a[2]}; //颜色渐变范围
+    
+    UILabel *sourceLabel = _pageTitleView.labelArray[sourceIndex];
+    UILabel *targetLabel = _pageTitleView.labelArray[targetIndex];
+    
+    CGFloat moveMargin = targetLabel.frame.origin.x - sourceLabel.frame.origin.x;
+    _pageTitleView.scrollLine.frame = CGRectMake(sourceLabel.frame.origin.x + moveMargin * progress, _pageTitleView.frame.size.height - 2.5 ,_pageTitleView.frame.size.width/4, 2);
+    
+    sourceLabel.textColor = [UIColor colorWithRed:(b[0] - c[0]*progress)/255.f green:(b[1] - c[1]*progress)/255.f blue:(b[2] - c[2]*progress)/255.f alpha:1];
+    targetLabel.textColor = [UIColor colorWithRed:(a[0] + c[0]*progress)/255.f green:(a[1] + c[1]*progress)/255.f blue:(a[2] + c[2]*progress)/255.f alpha:1];
+
+    
 }
 
 #pragma mark - Click Action
