@@ -11,4 +11,9 @@
 
 @interface CollectionNormalCell : CollectionBaseCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UILabel *roomName;
+@property (weak, nonatomic) IBOutlet UILabel *nickName;
+@property (weak, nonatomic) IBOutlet UIButton *onlineNumber;
+
 @end

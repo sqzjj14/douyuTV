@@ -10,5 +10,6 @@
 
 @interface CollectionHeaderView : UICollectionReusableView
 
+@property (weak, nonatomic) IBOutlet UIImageView *imageIcon;
 
 @end

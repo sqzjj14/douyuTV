@@ -50,6 +50,9 @@
                 <constraint firstItem="Jht-TM-iTk" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="gZQ-4J-kBd"/>
                 <constraint firstItem="OFb-pz-Tbe" firstAttribute="leading" secondItem="O4Y-Ec-hyq" secondAttribute="trailing" constant="5" id="nqq-pI-AKd"/>
             </constraints>
+            <connections>
+                <outlet property="imageIcon" destination="O4Y-Ec-hyq" id="jPq-06-W6B"/>
+            </connections>
             <point key="canvasLocation" x="9" y="55"/>
         </collectionReusableView>
     </objects>

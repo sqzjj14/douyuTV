@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15F1A80841FB1B1954CCD493 /* Pods_douyuTV.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA758EB9B1FBEB4C6AF4313 /* Pods_douyuTV.framework */; };
 		5042AEFC1E7A27A800A567FE /* BaseCollectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042AEFB1E7A27A800A567FE /* BaseCollectViewController.m */; };
 		5042AEFF1E7A2DD400A567FE /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042AEFE1E7A2DD400A567FE /* CollectionHeaderView.xib */; };
 		5042AF021E7A2DF600A567FE /* CollectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042AF011E7A2DF600A567FE /* CollectionHeaderView.m */; };
-		5042AF081E7A3BD400A567FE /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042AF071E7A3BD400A567FE /* CollectionNormalCell.xib */; };
 		5042AF0A1E7A3BFD00A567FE /* CollectionPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5042AF091E7A3BFD00A567FE /* CollectionPrettyCell.xib */; };
 		5042AF0D1E7A3C8A00A567FE /* CollectionNormalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042AF0C1E7A3C8A00A567FE /* CollectionNormalCell.m */; };
 		5042AF101E7A3C9700A567FE /* CollectionPrettyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5042AF0F1E7A3C9700A567FE /* CollectionPrettyCell.m */; };
@@ -21,6 +21,13 @@
 		50663AC21E793EE800AB3BAE /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50663AC11E793EE800AB3BAE /* GameViewController.m */; };
 		50663AC51E793EF800AB3BAE /* AmuseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50663AC41E793EF800AB3BAE /* AmuseViewController.m */; };
 		50663AC81E793F0300AB3BAE /* FunnyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50663AC71E793F0300AB3BAE /* FunnyViewController.m */; };
+		5067F7B01E7B73790029838D /* RecommendCycleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F7AF1E7B73790029838D /* RecommendCycleView.m */; };
+		5067F7B41E7B80580029838D /* RecommendBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F7B31E7B80580029838D /* RecommendBaseModel.m */; };
+		5067F7B61E7B828B0029838D /* CollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067F7B51E7B828B0029838D /* CollectionNormalCell.xib */; };
+		5067F7BA1E7B88850029838D /* CollectionCycleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F7B81E7B88850029838D /* CollectionCycleCell.m */; };
+		5067F7BB1E7B88850029838D /* CollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5067F7B91E7B88850029838D /* CollectionCycleCell.xib */; };
+		5067F7BE1E7BC7D90029838D /* CycleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5067F7BD1E7BC7D90029838D /* CycleModel.m */; };
+		509FA9911E7BEA69000EE94B /* NSData+Time.m in Sources */ = {isa = PBXBuildFile; fileRef = 509FA9901E7BEA69000EE94B /* NSData+Time.m */; };
 		50FD6B581E78D4F3003BBBCB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD6B571E78D4F3003BBBCB /* main.m */; };
 		50FD6B5B1E78D4F3003BBBCB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD6B5A1E78D4F3003BBBCB /* AppDelegate.m */; };
 		50FD6B611E78D4F3003BBBCB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FD6B5F1E78D4F3003BBBCB /* Main.storyboard */; };
@@ -56,12 +63,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		38DF02E63FE70643BE1746F6 /* Pods-douyuTV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuTV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-douyuTV/Pods-douyuTV.debug.xcconfig"; sourceTree = "<group>"; };
 		5042AEFA1E7A27A800A567FE /* BaseCollectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCollectViewController.h; sourceTree = "<group>"; };
 		5042AEFB1E7A27A800A567FE /* BaseCollectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCollectViewController.m; sourceTree = "<group>"; };
 		5042AEFE1E7A2DD400A567FE /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
 		5042AF001E7A2DF600A567FE /* CollectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionHeaderView.h; sourceTree = "<group>"; };
 		5042AF011E7A2DF600A567FE /* CollectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionHeaderView.m; sourceTree = "<group>"; };
-		5042AF071E7A3BD400A567FE /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
 		5042AF091E7A3BFD00A567FE /* CollectionPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionPrettyCell.xib; sourceTree = "<group>"; };
 		5042AF0B1E7A3C8A00A567FE /* CollectionNormalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionNormalCell.h; sourceTree = "<group>"; };
 		5042AF0C1E7A3C8A00A567FE /* CollectionNormalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionNormalCell.m; sourceTree = "<group>"; };
@@ -82,6 +89,18 @@
 		50663AC41E793EF800AB3BAE /* AmuseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmuseViewController.m; sourceTree = "<group>"; };
 		50663AC61E793F0300AB3BAE /* FunnyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunnyViewController.h; sourceTree = "<group>"; };
 		50663AC71E793F0300AB3BAE /* FunnyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunnyViewController.m; sourceTree = "<group>"; };
+		5067F7AE1E7B73790029838D /* RecommendCycleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendCycleView.h; sourceTree = "<group>"; };
+		5067F7AF1E7B73790029838D /* RecommendCycleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendCycleView.m; sourceTree = "<group>"; };
+		5067F7B21E7B80580029838D /* RecommendBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecommendBaseModel.h; sourceTree = "<group>"; };
+		5067F7B31E7B80580029838D /* RecommendBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecommendBaseModel.m; sourceTree = "<group>"; };
+		5067F7B51E7B828B0029838D /* CollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionNormalCell.xib; sourceTree = "<group>"; };
+		5067F7B71E7B88850029838D /* CollectionCycleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCycleCell.h; sourceTree = "<group>"; };
+		5067F7B81E7B88850029838D /* CollectionCycleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCycleCell.m; sourceTree = "<group>"; };
+		5067F7B91E7B88850029838D /* CollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionCycleCell.xib; sourceTree = "<group>"; };
+		5067F7BC1E7BC7D90029838D /* CycleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleModel.h; sourceTree = "<group>"; };
+		5067F7BD1E7BC7D90029838D /* CycleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CycleModel.m; sourceTree = "<group>"; };
+		509FA98F1E7BEA69000EE94B /* NSData+Time.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Time.h"; sourceTree = "<group>"; };
+		509FA9901E7BEA69000EE94B /* NSData+Time.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Time.m"; sourceTree = "<group>"; };
 		50FD6B531E78D4F3003BBBCB /* douyuTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = douyuTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD6B571E78D4F3003BBBCB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		50FD6B591E78D4F3003BBBCB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -108,6 +127,8 @@
 		50FD6B981E78D70A003BBBCB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		50FD6B991E78D70A003BBBCB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		50FD6B9A1E78D70A003BBBCB /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		66677AC59CECFC0000563571 /* Pods-douyuTV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-douyuTV.release.xcconfig"; path = "Pods/Target Support Files/Pods-douyuTV/Pods-douyuTV.release.xcconfig"; sourceTree = "<group>"; };
+		FBA758EB9B1FBEB4C6AF4313 /* Pods_douyuTV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_douyuTV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15F1A80841FB1B1954CCD493 /* Pods_douyuTV.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,12 +160,15 @@
 		5042AEFD1E7A2DC000A567FE /* cell */ = {
 			isa = PBXGroup;
 			children = (
-				5042AEFE1E7A2DD400A567FE /* CollectionHeaderView.xib */,
+				5067F7B71E7B88850029838D /* CollectionCycleCell.h */,
+				5067F7B81E7B88850029838D /* CollectionCycleCell.m */,
+				5067F7B91E7B88850029838D /* CollectionCycleCell.xib */,
 				5042AF001E7A2DF600A567FE /* CollectionHeaderView.h */,
 				5042AF011E7A2DF600A567FE /* CollectionHeaderView.m */,
+				5042AEFE1E7A2DD400A567FE /* CollectionHeaderView.xib */,
 				5042AF0B1E7A3C8A00A567FE /* CollectionNormalCell.h */,
 				5042AF0C1E7A3C8A00A567FE /* CollectionNormalCell.m */,
-				5042AF071E7A3BD400A567FE /* CollectionNormalCell.xib */,
+				5067F7B51E7B828B0029838D /* CollectionNormalCell.xib */,
 				5042AF0E1E7A3C9700A567FE /* CollectionPrettyCell.h */,
 				5042AF0F1E7A3C9700A567FE /* CollectionPrettyCell.m */,
 				5042AF091E7A3BFD00A567FE /* CollectionPrettyCell.xib */,
@@ -156,21 +181,10 @@
 		50663AB11E78F5A400AB3BAE /* home */ = {
 			isa = PBXGroup;
 			children = (
+				5067F7B11E7B80180029838D /* model */,
 				50663AB51E78F5F700AB3BAE /* customView */,
 				5042AEFD1E7A2DC000A567FE /* cell */,
-				50FD6B891E78D68C003BBBCB /* HomeViewController.h */,
-				50FD6B8A1E78D68C003BBBCB /* HomeViewController.m */,
-				50FD6B8B1E78D68C003BBBCB /* HomeViewController.xib */,
-				5042AEFA1E7A27A800A567FE /* BaseCollectViewController.h */,
-				5042AEFB1E7A27A800A567FE /* BaseCollectViewController.m */,
-				50663ABD1E793EDA00AB3BAE /* RecommendViewController.h */,
-				50663ABE1E793EDA00AB3BAE /* RecommendViewController.m */,
-				50663AC01E793EE800AB3BAE /* GameViewController.h */,
-				50663AC11E793EE800AB3BAE /* GameViewController.m */,
-				50663AC31E793EF800AB3BAE /* AmuseViewController.h */,
-				50663AC41E793EF800AB3BAE /* AmuseViewController.m */,
-				50663AC61E793F0300AB3BAE /* FunnyViewController.h */,
-				50663AC71E793F0300AB3BAE /* FunnyViewController.m */,
+				509FA98E1E7BE8BD000EE94B /* controller */,
 			);
 			name = home;
 			sourceTree = "<group>";
@@ -212,8 +226,41 @@
 				50663AB71E78F61600AB3BAE /* PageTitleView.m */,
 				50663AB91E79140E00AB3BAE /* PageContentView.h */,
 				50663ABA1E79140E00AB3BAE /* PageContentView.m */,
+				5067F7AE1E7B73790029838D /* RecommendCycleView.h */,
+				5067F7AF1E7B73790029838D /* RecommendCycleView.m */,
 			);
 			name = customView;
+			sourceTree = "<group>";
+		};
+		5067F7B11E7B80180029838D /* model */ = {
+			isa = PBXGroup;
+			children = (
+				5067F7B21E7B80580029838D /* RecommendBaseModel.h */,
+				5067F7B31E7B80580029838D /* RecommendBaseModel.m */,
+				5067F7BC1E7BC7D90029838D /* CycleModel.h */,
+				5067F7BD1E7BC7D90029838D /* CycleModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		509FA98E1E7BE8BD000EE94B /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				50FD6B891E78D68C003BBBCB /* HomeViewController.h */,
+				50FD6B8A1E78D68C003BBBCB /* HomeViewController.m */,
+				50FD6B8B1E78D68C003BBBCB /* HomeViewController.xib */,
+				5042AEFA1E7A27A800A567FE /* BaseCollectViewController.h */,
+				5042AEFB1E7A27A800A567FE /* BaseCollectViewController.m */,
+				50663ABD1E793EDA00AB3BAE /* RecommendViewController.h */,
+				50663ABE1E793EDA00AB3BAE /* RecommendViewController.m */,
+				50663AC01E793EE800AB3BAE /* GameViewController.h */,
+				50663AC11E793EE800AB3BAE /* GameViewController.m */,
+				50663AC31E793EF800AB3BAE /* AmuseViewController.h */,
+				50663AC41E793EF800AB3BAE /* AmuseViewController.m */,
+				50663AC61E793F0300AB3BAE /* FunnyViewController.h */,
+				50663AC71E793F0300AB3BAE /* FunnyViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 		50FD6B4A1E78D4F3003BBBCB = {
@@ -223,6 +270,8 @@
 				50FD6B6F1E78D4F3003BBBCB /* douyuTVTests */,
 				50FD6B7A1E78D4F3003BBBCB /* douyuTVUITests */,
 				50FD6B541E78D4F3003BBBCB /* Products */,
+				EC50556EDBA70413B98EA0E6 /* Pods */,
+				EF7C0B474585FDCDB8B6915E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -259,6 +308,8 @@
 			children = (
 				50FD6B571E78D4F3003BBBCB /* main.m */,
 				50663ABC1E791A9F00AB3BAE /* WFPrefix.pch */,
+				509FA98F1E7BEA69000EE94B /* NSData+Time.h */,
+				509FA9901E7BEA69000EE94B /* NSData+Time.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -281,6 +332,23 @@
 			path = douyuTVUITests;
 			sourceTree = "<group>";
 		};
+		EC50556EDBA70413B98EA0E6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38DF02E63FE70643BE1746F6 /* Pods-douyuTV.debug.xcconfig */,
+				66677AC59CECFC0000563571 /* Pods-douyuTV.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF7C0B474585FDCDB8B6915E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBA758EB9B1FBEB4C6AF4313 /* Pods_douyuTV.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -288,9 +356,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50FD6B801E78D4F3003BBBCB /* Build configuration list for PBXNativeTarget "douyuTV" */;
 			buildPhases = (
+				A3C8A316C8E7C51D188ADD1B /* [CP] Check Pods Manifest.lock */,
 				50FD6B4F1E78D4F3003BBBCB /* Sources */,
 				50FD6B501E78D4F3003BBBCB /* Frameworks */,
 				50FD6B511E78D4F3003BBBCB /* Resources */,
+				1DBA1E84C2E161318B00DC9C /* [CP] Embed Pods Frameworks */,
+				37760B2B44CA9FF94B7ED6D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,8 +460,9 @@
 			files = (
 				50FD6B9C1E78D70A003BBBCB /* ProfileViewController.xib in Resources */,
 				5042AEFF1E7A2DD400A567FE /* CollectionHeaderView.xib in Resources */,
-				5042AF081E7A3BD400A567FE /* CollectionNormalCell.xib in Resources */,
+				5067F7B61E7B828B0029838D /* CollectionNormalCell.xib in Resources */,
 				50FD6B661E78D4F3003BBBCB /* LaunchScreen.storyboard in Resources */,
+				5067F7BB1E7B88850029838D /* CollectionCycleCell.xib in Resources */,
 				50FD6B971E78D6FC003BBBCB /* FollowViewController.xib in Resources */,
 				50FD6B631E78D4F3003BBBCB /* Assets.xcassets in Resources */,
 				50FD6B611E78D4F3003BBBCB /* Main.storyboard in Resources */,
@@ -416,23 +488,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DBA1E84C2E161318B00DC9C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuTV/Pods-douyuTV-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37760B2B44CA9FF94B7ED6D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-douyuTV/Pods-douyuTV-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3C8A316C8E7C51D188ADD1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		50FD6B4F1E78D4F3003BBBCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5067F7BA1E7B88850029838D /* CollectionCycleCell.m in Sources */,
 				50FD6B911E78D6EE003BBBCB /* LiveViewController.m in Sources */,
 				50663AC81E793F0300AB3BAE /* FunnyViewController.m in Sources */,
+				509FA9911E7BEA69000EE94B /* NSData+Time.m in Sources */,
 				50663AC21E793EE800AB3BAE /* GameViewController.m in Sources */,
 				5042AF021E7A2DF600A567FE /* CollectionHeaderView.m in Sources */,
 				50663ABF1E793EDA00AB3BAE /* RecommendViewController.m in Sources */,
 				5042AF101E7A3C9700A567FE /* CollectionPrettyCell.m in Sources */,
+				5067F7BE1E7BC7D90029838D /* CycleModel.m in Sources */,
+				5067F7B41E7B80580029838D /* RecommendBaseModel.m in Sources */,
 				5042AF0D1E7A3C8A00A567FE /* CollectionNormalCell.m in Sources */,
 				50663ABB1E79140E00AB3BAE /* PageContentView.m in Sources */,
 				50FD6B5B1E78D4F3003BBBCB /* AppDelegate.m in Sources */,
 				5042AEFC1E7A27A800A567FE /* BaseCollectViewController.m in Sources */,
 				5042AF131E7A5DF200A567FE /* CollectionBaseCell.m in Sources */,
 				50FD6B581E78D4F3003BBBCB /* main.m in Sources */,
+				5067F7B01E7B73790029838D /* RecommendCycleView.m in Sources */,
 				50663AB81E78F61600AB3BAE /* PageTitleView.m in Sources */,
 				50FD6B9B1E78D70A003BBBCB /* ProfileViewController.m in Sources */,
 				50FD6B8C1E78D68C003BBBCB /* HomeViewController.m in Sources */,
@@ -584,6 +709,7 @@
 		};
 		50FD6B811E78D4F3003BBBCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38DF02E63FE70643BE1746F6 /* Pods-douyuTV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -599,6 +725,7 @@
 		};
 		50FD6B821E78D4F3003BBBCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66677AC59CECFC0000563571 /* Pods-douyuTV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

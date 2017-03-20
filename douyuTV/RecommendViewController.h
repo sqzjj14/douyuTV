@@ -9,5 +9,5 @@
 #import "BaseCollectViewController.h"
 
 @interface RecommendViewController : BaseCollectViewController
-
+@property (nonatomic,strong)NSMutableArray *dataSource;
 @end
