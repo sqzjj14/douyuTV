@@ -52,6 +52,7 @@
             </constraints>
             <connections>
                 <outlet property="imageIcon" destination="O4Y-Ec-hyq" id="jPq-06-W6B"/>
+                <outlet property="titleLabel" destination="OFb-pz-Tbe" id="e3Q-TI-E4O"/>
             </connections>
             <point key="canvasLocation" x="9" y="55"/>
         </collectionReusableView>

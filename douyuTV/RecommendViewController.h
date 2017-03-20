@@ -10,4 +10,5 @@
 
 @interface RecommendViewController : BaseCollectViewController
 @property (nonatomic,strong)NSMutableArray *dataSource;
+@property (nonatomic,strong)NSMutableArray *sectionArr;
 @end

@@ -10,9 +10,9 @@
 
 @interface RecommendBaseModel : NSObject
 @property(nonatomic,copy)NSString *roomName;
-@property(nonatomic,copy)NSString *zhuboName;
+@property(nonatomic,copy)NSString *nickName;
 @property(nonatomic,copy)NSString *onlineNumber;
-@property(nonatomic,copy)NSString *imageUrl;
+@property(nonatomic,copy)NSString *roomImageUrl;
 @property(nonatomic,copy)NSString *roomId;
 @property(nonatomic,copy)NSString *city;
 @end

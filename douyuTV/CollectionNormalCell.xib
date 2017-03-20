@@ -8,39 +8,39 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VF1-O2-azi" customClass="CollectionNormalCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Zs6-Fs-rcS" customClass="CollectionNormalCell">
             <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="253" height="182"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="QN1-Ze-qH4"/>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="pld-z4-gr7">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="0eW-ID-ahN"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nick name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goh-St-yJT">
                         <constraints>
-                            <constraint firstAttribute="width" constant="14" id="8nz-x7-o56"/>
-                            <constraint firstAttribute="height" constant="14" id="FUH-WU-hRu"/>
-                        </constraints>
-                    </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVN-Z1-q8U">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="14" id="qaH-CI-h7M"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="nick name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-S8-1KR">
-                        <constraints>
-                            <constraint firstAttribute="height" constant="14" id="5Z0-fY-5bR"/>
+                            <constraint firstAttribute="height" constant="14" id="Zww-vl-l19"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iEm-V3-INv">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_cate_normal" translatesAutoresizingMaskIntoConstraints="NO" id="2zr-vz-oTo">
                         <constraints>
-                            <constraint firstAttribute="height" constant="22" id="WOo-yp-Hls"/>
+                            <constraint firstAttribute="width" constant="14" id="AmG-GO-dDU"/>
+                            <constraint firstAttribute="height" constant="14" id="kOw-8W-dUr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="room name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtu-7S-w2u">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="xo8-au-EVC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Emy-Gr-fAE">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="leO-3v-wyS"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="11"/>
                         <state key="normal" title="1000在线" image="Image_online">
@@ -50,27 +50,26 @@
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="iEm-V3-INv" secondAttribute="trailing" constant="6" id="4Mx-fb-EEU"/>
-                <constraint firstItem="cVN-Z1-q8U" firstAttribute="centerY" secondItem="pld-z4-gr7" secondAttribute="centerY" id="B1y-VT-gvU"/>
-                <constraint firstItem="Fbd-S8-1KR" firstAttribute="leading" secondItem="VF1-O2-azi" secondAttribute="leading" constant="6" id="GZn-uc-DDU"/>
-                <constraint firstItem="pld-z4-gr7" firstAttribute="leading" secondItem="VF1-O2-azi" secondAttribute="leading" id="TNW-fV-qGl"/>
-                <constraint firstItem="pld-z4-gr7" firstAttribute="top" secondItem="QN1-Ze-qH4" secondAttribute="bottom" constant="5" id="WaW-gd-khi"/>
-                <constraint firstItem="iEm-V3-INv" firstAttribute="centerY" secondItem="Fbd-S8-1KR" secondAttribute="centerY" id="cyR-Lu-v6m"/>
-                <constraint firstItem="cVN-Z1-q8U" firstAttribute="leading" secondItem="pld-z4-gr7" secondAttribute="trailing" constant="6" id="i3u-zJ-Ll2"/>
-                <constraint firstAttribute="trailing" secondItem="QN1-Ze-qH4" secondAttribute="trailing" id="li3-5c-u5a"/>
-                <constraint firstAttribute="bottom" secondItem="QN1-Ze-qH4" secondAttribute="bottom" constant="26" id="ltY-42-z9f"/>
-                <constraint firstItem="QN1-Ze-qH4" firstAttribute="leading" secondItem="VF1-O2-azi" secondAttribute="leading" id="pC2-XX-zKN"/>
-                <constraint firstItem="QN1-Ze-qH4" firstAttribute="top" secondItem="VF1-O2-azi" secondAttribute="top" id="qJ6-BU-gmm"/>
-                <constraint firstItem="cVN-Z1-q8U" firstAttribute="top" secondItem="Fbd-S8-1KR" secondAttribute="bottom" constant="11" id="uoy-Ls-qDt"/>
+                <constraint firstItem="0eW-ID-ahN" firstAttribute="leading" secondItem="Zs6-Fs-rcS" secondAttribute="leading" id="57E-uw-Lpm"/>
+                <constraint firstItem="2zr-vz-oTo" firstAttribute="leading" secondItem="Zs6-Fs-rcS" secondAttribute="leading" constant="1" id="6Wk-jM-Pwv"/>
+                <constraint firstItem="Dtu-7S-w2u" firstAttribute="top" secondItem="goh-St-yJT" secondAttribute="bottom" constant="12" id="B8Q-Jd-IQv"/>
+                <constraint firstItem="goh-St-yJT" firstAttribute="leading" secondItem="Zs6-Fs-rcS" secondAttribute="leading" constant="3" id="QoU-vY-K4d"/>
+                <constraint firstItem="Dtu-7S-w2u" firstAttribute="centerY" secondItem="2zr-vz-oTo" secondAttribute="centerY" id="VNd-za-Fns"/>
+                <constraint firstItem="Dtu-7S-w2u" firstAttribute="leading" secondItem="2zr-vz-oTo" secondAttribute="trailing" constant="4" id="cIb-ZZ-iFc"/>
+                <constraint firstItem="0eW-ID-ahN" firstAttribute="top" secondItem="Zs6-Fs-rcS" secondAttribute="top" id="huR-8O-VgX"/>
+                <constraint firstItem="Emy-Gr-fAE" firstAttribute="centerY" secondItem="goh-St-yJT" secondAttribute="centerY" id="jBX-Cv-0Eh"/>
+                <constraint firstAttribute="bottom" secondItem="2zr-vz-oTo" secondAttribute="bottom" constant="6" id="jzp-e2-dbf"/>
+                <constraint firstAttribute="trailing" secondItem="Emy-Gr-fAE" secondAttribute="trailing" constant="2" id="nmQ-sP-EYL"/>
+                <constraint firstAttribute="bottom" secondItem="0eW-ID-ahN" secondAttribute="bottom" constant="26" id="oc2-gQ-jjr"/>
+                <constraint firstAttribute="trailing" secondItem="0eW-ID-ahN" secondAttribute="trailing" id="te1-7m-ZwF"/>
             </constraints>
-            <size key="customSize" width="253" height="67"/>
             <connections>
-                <outlet property="image" destination="QN1-Ze-qH4" id="aAN-b5-GeR"/>
-                <outlet property="nickName" destination="Fbd-S8-1KR" id="3Fz-c1-3dT"/>
-                <outlet property="onlineNumber" destination="iEm-V3-INv" id="knu-Gc-icW"/>
-                <outlet property="roomName" destination="cVN-Z1-q8U" id="vJo-By-pxL"/>
+                <outlet property="nickName" destination="goh-St-yJT" id="KFW-dC-mYi"/>
+                <outlet property="onlineLabel" destination="Emy-Gr-fAE" id="e8H-6j-NzW"/>
+                <outlet property="roomImage" destination="0eW-ID-ahN" id="VLY-s7-oYj"/>
+                <outlet property="roomName" destination="Dtu-7S-w2u" id="xLo-DQ-T9q"/>
             </connections>
-            <point key="canvasLocation" x="332.5" y="527"/>
+            <point key="canvasLocation" x="101" y="556"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -10,10 +10,10 @@
 #import "CollectionBaseCell.h"
 
 @interface CollectionNormalCell : CollectionBaseCell
-
-@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIImageView *roomImage;
+@property (weak, nonatomic) IBOutlet UIButton *onlineLabel;
 @property (weak, nonatomic) IBOutlet UILabel *roomName;
 @property (weak, nonatomic) IBOutlet UILabel *nickName;
-@property (weak, nonatomic) IBOutlet UIButton *onlineNumber;
+
 
 @end
